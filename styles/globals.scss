@@ -13,6 +13,32 @@ body {
   font-family: Barlow, sans-serif;
 }
 
+a {
+  color: $linkRed;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    transition: 0.3s;
+
+    border-bottom: 2px solid $pceRed;
+  }
+
+  &:hover {
+    color: #fff;
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 em {
   color: $pceRed;
   font-family: Barlow, sans-serif;
@@ -123,8 +149,8 @@ h4 {
 }
 
 .panter-img {
-  height: 100px;
-  max-width: 300px;
+  width: 100%;
+  max-height: 50px;
 }
 
 .judge {
@@ -159,27 +185,5 @@ h4 {
 }
 
 .linka-gabca {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-  cursor: pointer;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    transition: 0.3s;
-
-    border-bottom: 2px solid $pceRed;
-  }
-
-  &:hover {
-    color: #fff;
-    &::after {
-      width: 100%;
-    }
-  }
+  color: #fff !important;
 }

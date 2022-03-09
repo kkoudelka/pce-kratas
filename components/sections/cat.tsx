@@ -40,24 +40,24 @@ const Categories: React.FC = () => {
             například <em>poukazy FOMEI</em> a <em>foto/video techniku</em>,
             která se rozhodně neztratí.
           </p>
-        </div>
 
-        <div className="d-flex">
-          <h2 className={classNames("text-left my-3", styles.title)}>
-            Vyhlášení
-          </h2>
+          <div className="d-flex">
+            <h2 className={classNames("text-left my-3", styles.title)}>
+              Vyhlášení
+            </h2>
+          </div>
+          <p>
+            Projekce a slavnostní vyhlášení soutěžních filmů budou probíhat
+            online prostřednictvím videostreamu na našem videokanálu{" "}
+            <a
+              href="https://www.youtube.com/channel/UCCTJGW3hZ7VjCr4LrDVtyQg"
+              target="_blank"
+            >
+              Delta Film
+            </a>
+            .
+          </p>
         </div>
-        <p>
-          Projekce a slavnostní vyhlášení soutěžních filmů budou probíhat online
-          prostřednictvím videostreamu na našem videokanálu{" "}
-          <a
-            href="https://www.youtube.com/channel/UCCTJGW3hZ7VjCr4LrDVtyQg"
-            target="_blank"
-          >
-            Delta Film
-          </a>
-          .
-        </p>
       </div>
     </section>
   );
