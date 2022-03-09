@@ -1,5 +1,5 @@
 //@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,800;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,800;1,800&display=swap");
 @import "./colors.scss";
 
 html,
@@ -7,6 +7,7 @@ body {
   position: relative;
   background-color: rgb(36, 36, 36);
   padding: 0;
+  font-weight: 400;
   margin: 0;
   font-family: Barlow, sans-serif;
 }
@@ -25,14 +26,50 @@ h4 {
   font-family: Barlow, sans-serif;
   font-weight: 800;
   font-style: italic;
+
+  &.underline {
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 35px;
+      border-bottom: 4px solid $pceRed;
+    }
+  }
 }
 
 h2 {
-  font-size: 25pt;
+  font-size: 24pt;
+}
+
+h3 {
+  font-size: 20pt;
 }
 
 h4 {
   font-size: 13pt !important;
+  color: $pceRed;
+}
+
+.categories {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  & > li {
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-bottom: 0.5em;
+
+    &::before {
+      content: "▶";
+      padding-right: 5px;
+    }
+  }
 }
 
 .carticka {
@@ -82,4 +119,49 @@ h4 {
 .scroll-anchor {
   position: absolute;
   top: -150px;
+}
+
+.panter-img {
+  height: 100px;
+}
+
+.juge-img {
+  height: 100px;
+
+  filter: grayscale(1);
+  border-left: 10px solid $pceRed;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pce {
+  color: $pceRed;
+}
+
+.linka-gabca {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    transition: 0.3s;
+
+    border-bottom: 2px solid $pceRed;
+  }
+
+  &:hover {
+    color: #fff;
+    &::after {
+      width: 100%;
+    }
+  }
 }

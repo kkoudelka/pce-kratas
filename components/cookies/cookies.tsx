@@ -32,7 +32,7 @@ const Cookies: React.FC = () => {
   if (!display) return null;
 
   return (
-    <div className="fixed-bottom pb-2 container text-white">
+    <div className="fixed-bottom pb-2 px-md-5 container text-white">
       <div
         className={classNames("carticka animate__animated animate__fadeIn", {
           animate__fadeOut: accepted,

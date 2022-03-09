@@ -10,8 +10,8 @@ const links = [
   { href: "/", label: "Přihláška" },
   { href: "/", label: "Projekce" },
   //{ href: "/", label: "Workshop" },
-  { href: "/", label: "Vyhodnocení" },
-  { href: "/", label: "Partneři" },
+  { href: "/#porota", label: "Vyhodnocení" },
+  { href: "/#partneri", label: "Partneři" },
   { href: "/#kontakt", label: "Kontakty" },
 ];
 
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
           <img
             src="/img/kratas-logo-light.svg"
             height={75}
-            className={styles.logo}
+            className={classNames(styles.logo, "pointer")}
             alt="Pardubický kraťas logo"
           />
         </Link>
@@ -60,6 +60,7 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 className={classNames("nav-link", styles.link)}
                 rel="noopener noreferrer"
+                title="Facebook"
               >
                 <div>
                   <i className="fab fa-facebook fa-lg me-2 me-md-0"></i>
@@ -71,6 +72,7 @@ const Navbar: React.FC = () => {
               <a
                 href="https://www.instagram.com/pardubickykratas/"
                 target="_blank"
+                title="Instagram"
                 className={classNames("nav-link", styles.link)}
                 rel="noopener noreferrer"
               >

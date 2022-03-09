@@ -6,14 +6,15 @@ const Categories: React.FC = () => {
   return (
     <section className="position-relative">
       <span id="kategorie" className="scroll-anchor"></span>
-      <h2 className="mb-4">Detaily soutěže</h2>
       <div className="row text-start">
         <div className="col-md-6 col-12 px-3 d-flex flex-column">
           <div className="d-flex">
-            <h2 className="text-left">Kategorie</h2>
+            <h2 className={classNames("text-left my-3", styles.title)}>
+              Kategorie
+            </h2>
           </div>
 
-          <ul className="w-100 text-start">
+          <ul className={classNames("w-100 text-start categories")}>
             <li>
               Krátký film na regionální téma města Pardubice a Pardubického
               kraje
@@ -26,16 +27,18 @@ const Categories: React.FC = () => {
           </ul>
         </div>
         <div className="col-md-6 col-12 px-3 pt-3 pt-md-0 ">
-          <div className="d-flex justify-content-center">
-            <h2 className={classNames("text-center", styles.title)}>Ceny</h2>
+          <div className="d-flex">
+            <h2 className={classNames("text-left my-3", styles.title)}>Ceny</h2>
           </div>
-          <ol>
-            <li>5.000,- Kč</li>
-            <li>3.000,- Kč</li>
-            <li>2.000,- Kč</li>
-          </ol>
-          <p className="text-muted">
-            Zvláštní cena FOMEI-poukazy, foto-video technika
+          <p>
+            Pro první tři místa každé kategorii čeká finanční odměna ve výši{" "}
+            <em>5000,- Kč</em> pro první místo, <em>3000,- Kč</em> pro druhé
+            místo a <em>2000,- Kč</em> pro třetí místo.
+          </p>
+          <p>
+            Naši partneři rovněž věnovali do soutěže speciální ceny obsahující
+            například <em>poukazy FOMEI</em> a foto / video techniku, která se
+            rozhodně neztratí.
           </p>
         </div>
       </div>
