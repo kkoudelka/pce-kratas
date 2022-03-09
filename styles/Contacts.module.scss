@@ -1,0 +1,26 @@
+@import "./colors.scss";
+
+.card {
+  padding: 20px;
+  background-color: $col;
+
+  color: #fff;
+
+  border-left: 15px solid $pceRed;
+
+  //drop shadow
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.link {
+  color: #fff !important;
+
+  & > i {
+    color: $pceRed;
+  }
+}

@@ -1,0 +1,44 @@
+@import "./colors.scss";
+@import "./_breakpoints.scss";
+
+.navbar {
+  height: 100px;
+  background-color: #00000066;
+  backdrop-filter: blur(10px);
+
+  @include md-down() {
+    height: auto;
+    background-color: #000000da;
+    color: rgb(218, 218, 218);
+  }
+}
+
+.logo {
+  @include md-down() {
+    height: 45px;
+  }
+}
+
+.link {
+  position: relative;
+  text-transform: uppercase;
+  color: #ffffffaa !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 2px solid $pceRed;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: #fff !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
