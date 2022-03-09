@@ -61,6 +61,7 @@ const Categories: React.FC = () => {
 
         <hr className="my-5" />
 
+        <span id="prihlaska" className="scroll-anchor"></span>
         <div className="carticka prihlaska">
           <div className="d-flex">
             <h2 className={classNames("text-left my-3", styles.title)}>
