@@ -17,6 +17,14 @@ const Top: React.FC = () => {
           />
           <h1 className="visually-hidden">Pardubický Kraťas</h1>
           <h2 style={{ marginTop: "-50px" }}>aneb filmová veselka na DELTĚ</h2>
+          <div className="my-5">
+            <a href="#prihlaska" className="cudlitko-linka">
+              <button className="cudlitko">Jak se přihlásit</button>
+            </a>
+          </div>
+          <div className="text-center">
+            <span className={styles.scrollArrow}>&#187;</span>
+          </div>
         </div>
       </div>
     </div>
