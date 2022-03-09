@@ -186,8 +186,8 @@ h4 {
 }
 
 .gabca-obrazek {
-  width: 150px;
-  max-width: 300px;
+  width: 100px;
+  filter: grayscale(1);
 
   @include md-down() {
     width: 100px;
