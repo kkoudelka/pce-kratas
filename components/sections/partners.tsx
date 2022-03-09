@@ -22,6 +22,7 @@ const Partners: React.FC = () => {
               src={`/partners/${partner.image}`}
               alt={partner.name}
               height={60}
+              className="panter-img"
             />
           </div>
         ))}

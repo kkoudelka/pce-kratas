@@ -37,8 +37,8 @@ const Categories: React.FC = () => {
           </p>
           <p>
             Naši partneři rovněž věnovali do soutěže speciální ceny obsahující
-            například <em>poukazy FOMEI</em> a foto / video techniku, která se
-            rozhodně neztratí.
+            například <em>poukazy FOMEI</em> a <em>foto/video techniku</em>,
+            která se rozhodně neztratí.
           </p>
         </div>
       </div>

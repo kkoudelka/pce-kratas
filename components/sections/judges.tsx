@@ -34,11 +34,13 @@ const Judges: React.FC = () => {
       <div className="d-flex flex-wrap">
         {judges.map((judge) => (
           <div key={judge.name} className="col-12 col-md-6 py-3 mr-3">
-            <img
-              src={`/heads/${judge.image}`}
-              alt={judge.name}
-              className="juge-img mb-3"
-            />
+            <div className="judge mb-3">
+              <img
+                src={`/heads/${judge.image}`}
+                alt={judge.name}
+                className="judge-img"
+              />
+            </div>
             <h3>{judge.name}</h3>
             <p>{judge.desc}</p>
           </div>

@@ -18,17 +18,17 @@ const Contact: React.FC = () => {
     <>
       <div className="position-relative">
         <span id="kontakt" className="scroll-anchor"></span>
-        <div className="container mb-4 px-0 px-md-5">
+        <div className="container mb-4 px-2 px-md-5">
           <h2 className="mb-4 underline text-white">Kontakty</h2>
           <div className="row text-white">
             {kontakts.map((kontakt, i) => (
-              <div key={i} className="col-12 col-md-6">
+              <div key={i} className="col-12 col-md-6 p-2">
                 <div className="carticka d-flex ">
                   <img
                     src={`/${kontakt.img}`}
                     alt={kontakt.name}
                     width={125}
-                    className="me-4"
+                    className="me-3 gabca-obrazek"
                   />
                   <div>
                     <h3 className="carticka-title">{kontakt.name}</h3>
