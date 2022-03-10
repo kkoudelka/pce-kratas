@@ -22,13 +22,13 @@ const Contact: React.FC = () => {
           <h2 className="mb-4 underline text-white">Kontakty</h2>
           <div className="row text-white">
             {kontakts.map((kontakt, i) => (
-              <div key={i} className="col-12 col-md-6 p-2">
+              <div key={i} className="col-12 col-md-5 p-2">
                 <div className="carticka d-flex ">
                   <img
                     src={`/${kontakt.img}`}
                     alt={kontakt.name}
                     width={125}
-                    className="me-3 gabca-obrazek"
+                    className="me-4 gabca-obrazek"
                   />
                   <div>
                     <h3 className="carticka-title">{kontakt.name}</h3>

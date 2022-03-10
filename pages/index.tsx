@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             <span id="o" className="scroll-anchor"></span>
             <h2 className="mb-4 underline">Co je Pardubický kraťas?</h2>
             <div className="row">
-              <div className="col-12 col-md-8 pr-5">
+              <div className="col-12 col-md-8 pe-5">
                 <p>
                   Pardubický kraťas je nová studentská{" "}
                   <em>filmová soutěž studentů středních škol</em> a žáků druhého
