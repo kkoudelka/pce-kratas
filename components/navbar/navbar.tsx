@@ -7,7 +7,7 @@ import styles from "../../styles/Navbar.module.scss";
 const links = [
   { href: "/#o", label: "O Soutěži" },
   { href: "/#kategorie", label: "Kategorie" },
-  { href: "/", label: "Přihláška" },
+  { href: "/#prihlaska", label: "Přihláška" },
   { href: "/", label: "Projekce" },
   //{ href: "/", label: "Workshop" },
   { href: "/#porota", label: "Vyhodnocení" },
