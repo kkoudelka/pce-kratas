@@ -4,7 +4,7 @@ import React from "react";
 const partners = [
   { name: "Pardubický kraj", image: "kraj.svg" },
   { name: "Magistrát města Pardubice", image: "pce_siroka_cernobila.svg" },
-  { name: "FOMEI", image: "fomei.svg" },
+  { name: "FOMEI", image: "FOMEI.svg" },
   { name: "VčVSAFV a Rychnovská 8", image: "R8_a_VcVSAFV.svg" },
 ];
 
