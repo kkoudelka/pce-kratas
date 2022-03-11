@@ -13,6 +13,7 @@ const Top: React.FC = () => {
         <div className="d-flex w-100 h-100 flex-column justify-content-center align-items-center pt-5">
           <img
             src="/img/kratas-logo-light.svg"
+            decoding="async"
             height={200}
             className={styles.logo}
             alt="Pardubický kraťas logo"

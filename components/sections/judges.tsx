@@ -38,6 +38,7 @@ const Judges: React.FC = () => {
               <img
                 src={`/heads/${judge.image}`}
                 alt={judge.name}
+                decoding="async"
                 className="judge-img"
               />
             </div>

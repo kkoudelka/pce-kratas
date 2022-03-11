@@ -20,11 +20,12 @@ const Contact: React.FC = () => {
         <span id="kontakt" className="scroll-anchor"></span>
         <div className="container mb-4 px-2 px-md-5">
           <h2 className="mb-4 underline text-white">Kontakty</h2>
-          <div className="row text-white">
+          <div className="d-flex flex-wrap flex-md-row flex-column text-white">
             {kontakts.map((kontakt, i) => (
               <div key={i} className="col-12 col-md-5 p-2">
-                <div className="carticka d-flex ">
+                <div className="carticka d-flex align-items-center">
                   <img
+                    decoding="async"
                     src={`/${kontakt.img}`}
                     alt={kontakt.name}
                     width={125}
@@ -80,6 +81,7 @@ const Contact: React.FC = () => {
               <div className={styles.card} style={{ pointerEvents: "auto" }}>
                 <div className="card-body mx-3 my-2">
                   <img
+                    decoding="async"
                     src="/img/delta_rude.svg"
                     width={200}
                     alt="Delta Logo Cervene jojojo to je nase barvicka"

@@ -21,6 +21,7 @@ const Partners: React.FC = () => {
             <img
               src={`/partners/${partner.image}`}
               alt={partner.name}
+              decoding="async"
               height={60}
               className="panter-img"
             />
