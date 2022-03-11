@@ -9,7 +9,6 @@ import { useEffect } from "react";
 const MyApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     print();
-    overflow();
   }, []);
 
   const print = () => {
@@ -18,17 +17,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
     // console log red 18px
     console.log("%c" + a, "color: #de091c; font-size: 18px;");
-  };
-
-  const overflow = () => {
-    if (!document || !window) return;
-    var docWidth = document.documentElement.offsetWidth;
-
-    [].forEach.call(document.querySelectorAll("*"), (el: any) => {
-      if (el.offsetWidth > docWidth) {
-        console.log(el);
-      }
-    });
   };
 
   return (
