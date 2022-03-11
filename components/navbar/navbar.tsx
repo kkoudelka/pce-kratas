@@ -8,9 +8,9 @@ const links = [
   { href: "/#o", label: "O Soutěži" },
   { href: "/#kategorie", label: "Kategorie" },
   { href: "/#prihlaska", label: "Přihláška" },
-  { href: "/", label: "Projekce" },
+  //{ href: "/", label: "Projekce" },
   //{ href: "/", label: "Workshop" },
-  { href: "/#porota", label: "Vyhodnocení" },
+  { href: "/#porota", label: "Porota" },
   { href: "/#partneri", label: "Partneři" },
   { href: "/#kontakt", label: "Kontakty" },
 ];

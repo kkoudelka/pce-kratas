@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import classNames from "classnames";
 import Link from "next/link";
 import React from "react";
 import styles from "../../styles/Top.module.scss";
@@ -26,7 +27,11 @@ const Top: React.FC = () => {
             </Link>
           </div>
           <div className="text-center">
-            <span className={styles.scrollArrow}>&#187;</span>
+            <Link href="#o" passHref>
+              <span className={classNames(styles.scrollArrow, "pointer")}>
+                &#187;
+              </span>
+            </Link>
           </div>
         </div>
       </div>
